@@ -8,7 +8,7 @@ RUN rm -rf /etc/nginx/nginx.conf && \
     mkdir -p /var/cache/nginx/uwsgi_temp && \
     mkdir -p /var/cache/nginx/scgi_temp && \
     chown -R nginx:nginx /var/cache/nginx && \
-    chwon -R nginx:nginx /etc/nginx/ && \
+    chown -R nginx:nginx /etc/nginx/ && \
     chmod -R 755 /etc/nginx/ && \
     chown -R nginx:nginx /var/log/nginx && \
     touch /var/run/nginx.pid && \
