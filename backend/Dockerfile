@@ -11,7 +11,7 @@ RUN addgroup -S expense && adduser -S expense -G expense && \
      mkdir /opt/server && \
      chown -R expense:expense /opt/server
 WORKDIR /opt/server
-COPY --from=builder /opt/derver /opt/server
+COPY --from=builder /opt/server /opt/server
 USER expense
 CMD ["node", "index.js"]
 
